@@ -39,8 +39,8 @@ function App() {
             <a className="nav-link text-secondary text-decoration-none" href="#projects">Projects</a>
             <a className="nav-link text-secondary text-decoration-none" href="#contact">Contact</a>
             <button className="btn bg-navy text-white btn-sm px-3 py-2 rounded-3 fw-semibold ms-3">
-              Download CV
-            </button>
+                  Download CV
+                </button>
           </div>
         </div>
       </nav>

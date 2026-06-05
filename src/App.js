@@ -47,47 +47,40 @@ function App() {
 
 
       {/* 🏠 HERO SECTION */}
-      <section id="home" className="container" style={{ paddingTop: '150px', paddingBottom: '80px' }}>
-        <div className="row align-items-center justify-content-between g-5">
-          <div className="col-12 col-md-7 text-center text-md-start">
-            <div className="d-inline-block bg-light text-navy px-3 py-1 rounded-pill small fw-medium mb-3 border border-blue-100">
-              🚀 Open to Opportunities
-            </div>
-            <h1 className="display-5 fw-bold text-dark mb-3">
-              Hi, I'm <span className="text-navy">Senithu Nethviru</span>
-            </h1>
-            <p className="lead text-secondary mb-4 fs-6" style={{ lineHeight: '1.8' }}>
-              An IT student passionate about full-stack software development, crafting clean mobile applications, and building robust systems.
-            </p>
-            <div className="d-flex flex-wrap justify-content-center justify-content-md-start gap-3">
-              <a href="#projects" className="btn bg-navy text-white px-4 py-2.5 rounded-3 shadow-sm fw-medium">
-                View My Work
-              </a>
-              <a href="#contact" className="btn btn-outline-secondary px-4 py-2.5 rounded-3 fw-medium">
-                Let's Talk
-              </a>
-            </div>
-          </div>
+<section id="home" className="container" style={{ paddingTop: '150px', paddingBottom: '80px' }}>
+  <div className="row align-items-center justify-content-between g-5">
+    
+    {/* Text Section (7 columns) */}
+    <div className="col-12 col-md-7 text-center text-md-start">
+      <div className="d-inline-block bg-light text-navy px-3 py-1 rounded-pill small fw-medium mb-3 border border-blue-100">
+        🚀 Open to Opportunities
+      </div>
+      <h1 className="display-5 fw-bold text-dark mb-3">
+        Hi, I'm <span className="text-navy">Senithu Nethviru</span>
+      </h1>
+      <p className="lead text-secondary mb-4 fs-6" style={{ lineHeight: '1.8' }}>
+        An IT student passionate about full-stack software development, crafting clean mobile applications, and building robust systems.
+      </p>
+      <div className="d-flex flex-wrap justify-content-center justify-content-md-start gap-3">
+        <a href="#projects" className="btn bg-navy text-white px-4 py-2.5 rounded-3 shadow-sm fw-medium">View My Work</a>
+        <a href="#contact" className="btn btn-outline-secondary px-4 py-2.5 rounded-3 fw-medium">Let's Talk</a>
+      </div>
+    </div>
 
-          <div className="col-12 col-md-4 d-flex justify-content-center">
-            <div className="bg-white border p-3 rounded-4 shadow-sm text-center" style={{ width: '250px', height: '250px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-              <div className="text-muted">
-              <div className="col-12 col-md-4 d-flex justify-content-center">
-                <div className="bg-white border p-1 rounded-4 shadow-sm text-center" 
-                  style={{ width: '250px', height: '250px', overflow: 'hidden' }}>
-                    <img 
-                      src="/my-photo.jpg" 
-                      alt="My Profile" 
-                      style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '15px' }} 
-                      />
-                      </div>
-                      </div>
-                <div className="small mt-2 text-secondary">Your Photo Here</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+    {/* Photo Section (Now part of the same row - 4 columns) */}
+    <div className="col-12 col-md-4 d-flex justify-content-center">
+      <div className="bg-white border p-1 rounded-4 shadow-sm" 
+           style={{ width: '250px', height: '250px', overflow: 'hidden', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+        <img 
+          src="/my-photo.jpg" 
+          alt="My Profile" 
+          style={{ width: '100%', height: '100%', objectFit: 'cover' }} 
+        />
+      </div>
+    </div>
+
+  </div> {/* row එක මෙතනින් වහන්න */}
+</section>
 
       {/* 👨‍💻 ABOUT ME SECTION */}
       <section id="about" className="container py-5 border-top">

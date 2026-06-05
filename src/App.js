@@ -69,13 +69,26 @@ function App() {
 
     {/* Photo Section (Now part of the same row - 4 columns) */}
     <div className="col-12 col-md-4 d-flex justify-content-center">
-      <div className="bg-white border p-1 rounded-4 shadow-sm" 
-           style={{ width: '250px', height: '250px', overflow: 'hidden', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-        <img 
-          src="/my-photo.jpg" 
-          alt="My Profile" 
-          style={{ width: '100%', height: '100%', objectFit: 'cover' }} 
-        />
+<div className="bg-white border p-1 rounded-4 shadow" // 'shadow-sm' වෙනුවට 'shadow' දැම්මම තව ලස්සනයි
+     style={{ 
+       width: '250px', 
+       height: '250px', 
+       overflow: 'hidden', 
+       display: 'flex', 
+       justifyContent: 'center', 
+       alignItems: 'center',
+       border: '4px solid #fff' // මේකෙන් ෆොටෝ එක වටේ සුදු පාට පෝඩර් එකක් ඇවිත් තව ලස්සන වෙනවා
+     }}>
+<img 
+  src="/my-photo.jpg" 
+  alt="My Profile" 
+  style={{ 
+    width: '100%', 
+    height: '100%', 
+    objectFit: 'cover', 
+    borderRadius: '12px' // මේක එකතු කරන්න (කොටුවේ කොන් වල හැඩයට ගැලපෙන්න)
+  }} 
+/>
       </div>
     </div>
 

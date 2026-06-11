@@ -111,7 +111,7 @@ function ProfessionalPortfolio() {
             <div className="space-y-4 text-slate-600 text-sm leading-relaxed text-justify">
               <p>This segment of the program focused intensely on Emotional Intelligence (EI) and its undeniable importance across personal, academic, and professional domains. The lectures provided profound insights into what emotions truly are, how they subconsciously dictate our thoughts and behaviors, and how harnessing EI can help us build resilient relationships.</p>
               <div className="border border-slate-200 bg-slate-50 rounded-xl p-2 text-center my-4">
-                <img src="2.1.jpg" alt="EI Infographic" className="rounded-lg mx-auto max-w-full" />
+                <img src="2.webp" alt="EI Infographic" className="rounded-lg mx-auto max-w-full" />
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-2">
                 <div className="bg-slate-50 p-4 rounded-xl border border-slate-100 text-xs">
@@ -134,6 +134,10 @@ function ProfessionalPortfolio() {
             </div>
             <p className="text-slate-600 text-sm text-justify leading-relaxed">This session was entirely dedicated to the art and science of Portfolio Writing. The lecturer explained how a well-structured portfolio serves as a powerful catalyst for personal development and professional advancement. We explored how portfolios are utilized to visually and factually document achievements, skills, hands-on experience, and concrete evidence of continuous learning.</p>
           </section>
+
+
+
+
 
           {/* 04. CV WRITING */}
           <section id="cv" className="bg-white rounded-2xl shadow-sm border border-slate-200/60 p-8 scroll-mt-6">

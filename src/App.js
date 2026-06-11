@@ -1,4 +1,4 @@
-import React, { useState } from 'react'; 
+import React from 'react';
 
 function App() {
   // මෙතන loading කියන එක නෑ, projects විතරයි

@@ -209,189 +209,151 @@ function App() {
    
       </section>
 
-        {/* 💼 DYNAMIC PROJECTS SECTION */}
-        <section id="projects" className="container py-5 border-top">
-          <div className="text-center mb-5">
-            <h2 className="fw-bold text-dark">Featured Projects</h2>
-            <p className="text-secondary small">A showcase of my recent system developments and academic projects</p>
-          </div>
+            {/* 💼 DYNAMIC PROJECTS SECTION */}
+            <section id="projects" className="container py-5 border-top">
+              <div className="text-center mb-5">
+                <h2 className="fw-bold text-dark">Featured Projects</h2>
+                <p className="text-secondary small">A showcase of my recent system developments and academic projects</p>
+              </div>
 
-          <div className="row g-4">
-            {/* මෙන්න මේ projects ටික තමයි dynamic වෙන්නේ */}
-            {(() => {
-              // මෙතන තමයි ඔයාගේ data ටික තියෙන්නේ
-              const projectsData = [
-                {
-                  id: 1,
-                  title: "Inventory Management System",
-                  description: "A robust system for tracking assets and stock levels efficiently.",
-                  technologies: "Java, Spring Boot, MySQL",
-                  githubLink: "#"
-                },
-                {
-                  id: 2,
-                  title: "Flood Warning System",
-                  description: "Research-based project analyzing historical flood data.",
-                  technologies: "Data Analysis, Python, PowerBI",
-                  githubLink: "#"
-                },
-                {
-                  id: 3,
-                  title: "Portfolio Website",
-                  description: "My personal portfolio developed to showcase my skills.",
-                  technologies: "React.js, Bootstrap",
-                  githubLink: "#"
-                },
-                {
-                  id: 4,
-                  title: "My Game Project",
-                  description: "An exciting game project I developed using game dev tools.",
-                  technologies: "Unity, C#",
-                  githubLink: "#"
-                },
-                {
-                  id: 4,
-                  title: "Simple Calculator App",
-                  description: "A functional mini-app for quick arithmetic calculations.",
-                  technologies: "React, JS",
-                  githubLink: "#",
-                  icon: "🧮"
-                },
-                {
-                  id: 5,
-                  title: "PortFolio Admin App",
-                  description: "A functional mini-app for managing my portfolio content.",
-                  technologies: "React, JS",
-                  githubLink: "#",
-                  icon: "🧮"
-                }
+              <div className="row g-4">
+                {(() => {
+                  const projectsData = [
+                    { id: 1, title: "Inventory Management System", description: "A robust system for tracking assets and stock levels efficiently.", technologies: "Java, Spring Boot, MySQL", githubLink: "#" },
+                    { id: 2, title: "Flood Warning System", description: "Research-based project analyzing historical flood data.", technologies: "Data Analysis, Python, PowerBI", githubLink: "#" },
+                    { id: 3, title: "Portfolio Website", description: "My personal portfolio developed to showcase my skills.", technologies: "React.js, Bootstrap", githubLink: "#" },
+                    { id: 4, title: "My Game Project", description: "An exciting game project I developed using game dev tools.", technologies: "Unity, C#", githubLink: "#" },
+                    { id: 5, title: "Simple Calculator App", description: "A functional mini-app for quick arithmetic calculations.", technologies: "React, JS", githubLink: "#", icon: "🧮" },
+                    { id: 6, title: "PortFolio Admin App", description: "A functional mini-app for managing my portfolio content.", technologies: "React, JS", githubLink: "#", icon: "🧮" }
+                  ];
 
-              ];
+                  return projectsData.map((project) => {
+                    // icon එක තියෙනවා නම් ඒක ගන්න, නැත්නම් title එක අනුව icon එකක් assign කරන්න
+                    let currentIcon = project.icon || "📦";
+                    let badgeColor = "text-navy";
 
-              return projectsData.map((project) => {
-                let currentIcon = "📦";
-                let badgeColor = "text-navy";
+                    if (project.title.toLowerCase().includes("management")) {
+                      currentIcon = "⚙️";
+                      badgeColor = "text-primary";
+                    } else if (project.title.toLowerCase().includes("flood")) {
+                      currentIcon = "🌊";
+                      badgeColor = "text-secondary";
+                    } else if (project.title.toLowerCase().includes("game")) {
+                      currentIcon = "🎮";
+                      badgeColor = "text-success";
+                    } else if (project.title.toLowerCase().includes("app")) {
+                      currentIcon = "🧮";
+                      badgeColor = "text-info";
+                    }
 
-                // Icon සහ Badge පාට තීරණය කිරීම
-                if (project.title.toLowerCase().includes("management")) {
-                  currentIcon = "⚙️";
-                  badgeColor = "text-primary";
-                } else if (project.title.toLowerCase().includes("flood")) {
-                  currentIcon = "🌊";
-                  badgeColor = "text-secondary";
-                } else if (project.title.toLowerCase().includes("game")) {
-                  currentIcon = "🎮";
-                  badgeColor = "text-success";
-                }
-
-                return (
-                  <div className="col-12 col-md-4" key={project.id}>
-                    <div className="card h-100 bg-white border rounded-4 shadow-sm overflow-hidden border-0">
-                      <div className="p-4 bg-light border-bottom text-center d-flex align-items-center justify-content-center" style={{ height: '160px' }}>
-                        <span className="display-4 opacity-75">{currentIcon}</span>
-                      </div>
-                      <div className="card-body p-4 d-flex flex-column">
-                        <h5 className="card-title fw-bold text-dark mb-2">{project.title}</h5>
-                        <p className="card-text text-secondary small flex-grow-1" style={{ lineHeight: '1.6' }}>
-                          {project.description}
-                        </p>
-                        <div className="mb-3 mt-2">
-                          {(project.technologies ? project.technologies.split(',') : []).map((tech, index) => (
-                            <span className={`badge bg-light ${badgeColor} border me-1 mb-1`} key={index}>
-                              {tech.trim()}
-                            </span>
-                          ))}
+                    return (
+                      <div className="col-12 col-md-4" key={project.id}>
+                        <div className="card h-100 bg-white border rounded-4 shadow-sm overflow-hidden border-0">
+                          <div className="p-4 bg-light border-bottom text-center d-flex align-items-center justify-content-center" style={{ height: '160px' }}>
+                            <span className="display-4 opacity-75">{currentIcon}</span>
+                          </div>
+                          <div className="card-body p-4 d-flex flex-column">
+                            <h5 className="card-title fw-bold text-dark mb-2">{project.title}</h5>
+                            <p className="card-text text-secondary small flex-grow-1" style={{ lineHeight: '1.6' }}>
+                              {project.description}
+                            </p>
+                            <div className="mb-3 mt-2">
+                              {(project.technologies ? project.technologies.split(',') : []).map((tech, index) => (
+                                <span className={`badge bg-light ${badgeColor} border me-1 mb-1`} key={index}>
+                                  {tech.trim()}
+                                </span>
+                              ))}
+                            </div>
+                            <a href={project.githubLink} target="_blank" rel="noreferrer" className="text-navy fw-semibold text-decoration-none small">
+                              Explore Project →
+                            </a>
+                          </div>
                         </div>
-                        <a href={project.githubLink} target="_blank" rel="noreferrer" className="text-navy fw-semibold text-decoration-none small">
-                          Explore Project →
-                        </a>
                       </div>
-                    </div>
-                  </div>
-                );
-              });
-            })()}
-          </div>
-        </section>
+                    );
+                  });
+                })()}
+              </div>
+            </section>
 
 
               {/* 🎓 CAMPUS ASSIGNMENTS SECTION */}
-        <section id="campus-assignments" className="container py-5 border-top">
-          <div className="text-center mb-5">
-            <h2 className="fw-bold text-dark">Academic Portfolio</h2>
-            <p className="text-secondary small">University assignments and professional skills development</p>
-          </div>
+              <section id="campus-assignments" className="container py-5 border-top">
+                <div className="text-center mb-5">
+                  <h2 className="fw-bold text-dark">Academic Portfolio</h2>
+                  <p className="text-secondary small">University assignments and professional skills development</p>
+                </div>
 
-          <div className="row justify-content-center">
-            <div className="col-12 col-md-6">
-              <div className="card border-0 shadow-sm rounded-4 overflow-hidden">
-                <div className="row g-0">
-                  <div className="col-4 bg-indigo-900 d-flex align-items-center justify-content-center">
-                    <span className="display-3">🎓</span>
-                  </div>
-                  <div className="col-8">
-                    <div className="card-body p-4">
-                      <h5 className="card-title fw-bold">Professional Skills (PPA)</h5>
-                      <p className="card-text text-secondary small">
-                        Career insights, CV writing, interview skills, and Grow Green capstone project details.
-                      </p>
-                      {/* මෙතන තමයි ඔයාගේ අර Professional Portfolio එකට යන button එක */}
-                      <Link 
-                        to="/professional-portfolio" 
-                        className="btn btn-primary btn-sm rounded-pill px-4"
-                      >
-                        View Portfolio →
-                      </Link>
+                <div className="row justify-content-center">
+                  <div className="col-12 col-md-8 col-lg-6">
+                    <div className="card border-0 shadow-sm rounded-4 overflow-hidden">
+                      <div className="row g-0">
+                        {/* මෙතන col-12 col-md-4 දැම්මාම mobile එකේදි icon එක උඩින් පේනවා */}
+                        <div className="col-12 col-md-4 bg-indigo-900 d-flex align-items-center justify-content-center py-4">
+                          <span className="display-3">🎓</span>
+                        </div>
+                        <div className="col-12 col-md-8">
+                          <div className="card-body p-4">
+                            <h5 className="card-title fw-bold">Professional Skills (PPA)</h5>
+                            <p className="card-text text-secondary small">
+                              Career insights, CV writing, interview skills, and Grow Green capstone project details.
+                            </p>
+                            <Link 
+                              to="/professional-portfolio" 
+                              className="btn btn-primary btn-sm rounded-pill px-4 shadow-sm"
+                            >
+                              View Portfolio →
+                            </Link>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
-          </div>
-        </section>
+              </section>
 
-      {/* 📞 CONTACT SECTION */}
-      <section id="contact" className="container py-5 border-top">
-        <div className="row g-5">
-          <div className="col-12 col-md-6">
-            <h2 className="fw-bold text-dark mb-3">Let's Connect</h2>
-            <div className="bg-navy" style={{ width: '50px', height: '4px', borderRadius: '2px' }}></div>
-            <p className="text-secondary mt-4 fs-6" style={{ lineHeight: '1.8' }}>
-              Whether you want to discuss a potential project, internship opportunity, or just want to say hi, feel free to drop a message!
-            </p>
-            <div className="mt-4">
-              <div className="d-flex align-items-center mb-3">
-                <span className="fs-5 me-3 text-navy">📧</span>
-                <span className="text-secondary">snethviru@gmail.com</span>
+            {/* 📞 CONTACT SECTION */}
+            <section id="contact" className="container py-5 border-top">
+              <div className="row g-5">
+                <div className="col-12 col-md-6">
+                  <h2 className="fw-bold text-dark mb-3">Let's Connect</h2>
+                  <div className="bg-dark" style={{ width: '50px', height: '4px', borderRadius: '2px' }}></div>
+                  <p className="text-secondary mt-4 fs-6" style={{ lineHeight: '1.8' }}>
+                    Whether you want to discuss a potential project, internship opportunity, or just want to say hi, feel free to drop a message!
+                  </p>
+                  <div className="mt-4">
+                    <div className="d-flex align-items-center mb-3">
+                      <span className="fs-5 me-3">📧</span>
+                      <span className="text-secondary">snethviru@gmail.com</span>
+                    </div>
+                    <div className="d-flex align-items-center">
+                      <span className="fs-5 me-3">💬</span>
+                      <span className="text-secondary">Available via WhatsApp & LinkedIn</span>
+                    </div>
+                  </div>
+                </div>
+                
+                <div className="col-12 col-md-6">
+                  <form className="p-4 bg-white border rounded-4 shadow-sm">
+                    <div className="mb-3">
+                      <label className="form-label small fw-medium text-dark">Your Name</label>
+                      <input type="text" className="form-control rounded-3" placeholder="John Doe" />
+                    </div>
+                    <div className="mb-3">
+                      <label className="form-label small fw-medium text-dark">Email Address</label>
+                      <input type="email" className="form-control rounded-3" placeholder="john@example.com" />
+                    </div>
+                    <div className="mb-3">
+                      <label className="form-label small fw-medium text-dark">Your Message</label>
+                      <textarea className="form-control rounded-3" rows="4" placeholder="How can I help you?"></textarea>
+                    </div>
+                    <button type="submit" className="btn btn-dark w-100 rounded-3 fw-semibold py-2">
+                      Send Message
+                    </button>
+                  </form>
+                </div>
               </div>
-              <div className="d-flex align-items-center">
-                <span className="fs-5 me-3 text-success">💬</span>
-                <span className="text-secondary">Available via WhatsApp & LinkedIn</span>
-              </div>
-            </div>
-          </div>
-          
-          <div className="col-12 col-md-6">
-            <form className="p-4 bg-white border rounded-4 shadow-sm">
-              <div className="mb-3">
-                <label className="form-label small fw-medium text-dark">Your Name</label>
-                <input type="text" className="form-content form-control form-control-sm rounded-3" placeholder="John Doe" />
-              </div>
-              <div className="mb-3">
-                <label className="form-label small fw-medium text-dark">Email Address</label>
-                <input type="email" className="form-control form-control-sm rounded-3" placeholder="john@example.com" />
-              </div>
-              <div className="mb-3">
-                <label className="form-label small fw-medium text-dark">Your Message</label>
-                <textarea className="form-control form-control-sm rounded-3" rows="4" placeholder="How can I help you?"></textarea>
-              </div>
-              <button type="submit" className="btn bg-navy text-white btn-sm px-4 py-2 rounded-3 fw-semibold w-100">
-                Send Message
-              </button>
-            </form>
-          </div>
-        </div>
-      </section>
+            </section>
 
     </div>
   );

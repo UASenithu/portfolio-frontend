@@ -247,7 +247,16 @@ function App() {
                   description: "An exciting game project I developed using game dev tools.",
                   technologies: "Unity, C#",
                   githubLink: "#"
+                },
+                {
+                  id: 4,
+                  title: "Simple Calculator App",
+                  description: "A functional mini-app for quick arithmetic calculations.",
+                  technologies: "React, JS",
+                  githubLink: "#",
+                  icon: "🧮"
                 }
+
               ];
 
               return projectsData.map((project) => {

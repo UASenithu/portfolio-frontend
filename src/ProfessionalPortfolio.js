@@ -25,7 +25,7 @@ function ProfessionalPortfolio() {
             PROFESSIONAL SKILLS PORTFOLIO
           </h1>
           <p className="text-slate-400 text-sm md:text-base max-w-2xl mx-auto mb-8 font-light">
-            Continuous Development & Career Insights • PPA Module Portfolio
+            Continuous Development & Career Insights • PS Module Portfolio
           </p>
           
           <div className="inline-flex flex-wrap justify-center gap-6 bg-slate-900/60 border border-slate-800 px-8 py-4 rounded-2xl text-sm shadow-inner">
@@ -133,10 +133,16 @@ function ProfessionalPortfolio() {
               <h2 className="text-xl font-bold text-slate-900">Portfolio Writing</h2>
             </div>
             <p className="text-slate-600 text-sm text-justify leading-relaxed">This session was entirely dedicated to the art and science of Portfolio Writing. The lecturer explained how a well-structured portfolio serves as a powerful catalyst for personal development and professional advancement. We explored how portfolios are utilized to visually and factually document achievements, skills, hands-on experience, and concrete evidence of continuous learning.</p>
-            <div className="border border-slate-200 bg-slate-50 rounded-xl p-2 text-center">
-                <img src="1.2.webp" alt="Johari" className="rounded-lg mx-auto max-w-full" />
-                <span className="text-[11px] text-slate-400 block mt-2">Diagram: Johari Window Matrix</span>
-            </div>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-4">
+                <div className="border border-slate-200 bg-slate-50 rounded-xl p-2 text-center">
+                  <img src="1.png" alt="Chart" className="rounded-lg mx-auto max-w-full" />
+                  <span className="text-[11px] text-slate-400 block mt-2">Diagram: Core Employability Attributes</span>
+                </div>
+                <div className="border border-slate-200 bg-slate-50 rounded-xl p-2 text-center">
+                  <img src="3.png" alt="Johari" className="rounded-lg mx-auto max-w-full" />
+                  <span className="text-[11px] text-slate-400 block mt-2">Diagram: Johari Window Matrix</span>
+                </div>
+              </div>
 
           </section>
 
@@ -241,6 +247,7 @@ function ProfessionalPortfolio() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-4">
                 <div className="border border-green-200 bg-white rounded-xl p-2 text-center">
                   <img src="11.2.jpeg" alt="Group" className="rounded-lg mx-auto" />
+                  <img src="111.7.jpeg" alt="Group" className="rounded-lg mx-auto" />
                   <span className="text-[11px] font-semibold text-green-700 block mt-2">Team Assembly: 41 Group Members in Hall No: 403</span>
                 </div>
                 <div className="border border-green-200 bg-white rounded-xl p-2 text-center">

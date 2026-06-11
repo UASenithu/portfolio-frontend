@@ -114,17 +114,8 @@ function App() {
               and enjoying creative hobbies like vehicle styling and traveling.
             </p>
           </div>
-          <div className="col-12 col-md-6">
-            <div className="p-4 bg-white border rounded-4 shadow-sm">
-              <h5 className="fw-bold mb-4 text-navy">Education & Focus</h5>
-              <div className="mb-3">
-                <span className="badge bg-light text-navy border me-2">Institution</span>
-                <span className="text-dark font-medium">Higher Diploma in Information Technology</span>
-              </div>
-              <div className="mb-3">
-                <span className="badge bg-light text-navy border me-2">Core Track</span>
-                <span className="text-dark font-medium">Software Engineering & Network Security</span>
-              </div>
+
+
               <div>
                 <div className="p-4 bg-white border rounded-4 shadow-sm">
                     <h5 className="fw-bold mb-4 text-navy">Education & Certifications</h5>
@@ -153,8 +144,6 @@ function App() {
                 <span className="text-success font-semibold">Internships / Freelance Projects</span>
               </div>
             </div>
-          </div>
-        </div>
       </section>
 
       {/* 🧠 SKILLS SECTION */}

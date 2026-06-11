@@ -223,47 +223,83 @@ function App() {
           </div>
 
           <div className="row g-4">
-            {projects.map((project) => {
-              let currentIcon = "📦";
-              let badgeColor = "text-navy";
+            {/* මෙන්න මේ projects ටික තමයි dynamic වෙන්නේ */}
+            {(() => {
+              // මෙතන තමයි ඔයාගේ data ටික තියෙන්නේ
+              const projectsData = [
+                {
+                  id: 1,
+                  title: "Inventory Management System",
+                  description: "A robust system for tracking assets and stock levels efficiently.",
+                  technologies: "Java, Spring Boot, MySQL",
+                  githubLink: "#"
+                },
+                {
+                  id: 2,
+                  title: "Flood Warning System",
+                  description: "Research-based project analyzing historical flood data.",
+                  technologies: "Data Analysis, Python, PowerBI",
+                  githubLink: "#"
+                },
+                {
+                  id: 3,
+                  title: "Portfolio Website",
+                  description: "My personal portfolio developed to showcase my skills.",
+                  technologies: "React.js, Bootstrap",
+                  githubLink: "#"
+                },
+                {
+                  id: 4,
+                  title: "My Game Project",
+                  description: "An exciting game project I developed using game dev tools.",
+                  technologies: "Unity, C#",
+                  githubLink: "#"
+                }
+              ];
 
-              if (project.title.toLowerCase().includes("management")) {
-                currentIcon = "⚙️";
-                badgeColor = "text-primary";
-              } else if (project.title.toLowerCase().includes("flood")) {
-                currentIcon = "🌊";
-                badgeColor = "text-secondary";
-              }
+              return projectsData.map((project) => {
+                let currentIcon = "📦";
+                let badgeColor = "text-navy";
 
-              return (
-                <div className="col-12 col-md-4" key={project.id}>
-                  <div className="card h-100 bg-white border rounded-4 shadow-sm overflow-hidden border-0">
-                    <div className="p-4 bg-light border-bottom text-center d-flex align-items-center justify-content-center" style={{ height: '160px' }}>
-                      <span className="display-4 opacity-75">{currentIcon}</span>
-                    </div>
-                    <div className="card-body p-4 d-flex flex-column">
-                      <h5 className="card-title fw-bold text-dark mb-2">{project.title}</h5>
-                      <p className="card-text text-secondary small flex-grow-1" style={{ lineHeight: '1.6' }}>
-                        {project.description}
-                      </p>
-                      
-                      {/* මෙන්න මෙතන තමයි අර Error එක ආපු තැන, මේක දැන් හරි */}
-                      <div className="mb-3 mt-2">
-                        {(project.technologies ? project.technologies.split(',') : []).map((tech, index) => (
-                          <span className={`badge bg-light ${badgeColor} border me-1 mb-1`} key={index}>
-                            {tech.trim()}
-                          </span>
-                        ))}
+                // Icon සහ Badge පාට තීරණය කිරීම
+                if (project.title.toLowerCase().includes("management")) {
+                  currentIcon = "⚙️";
+                  badgeColor = "text-primary";
+                } else if (project.title.toLowerCase().includes("flood")) {
+                  currentIcon = "🌊";
+                  badgeColor = "text-secondary";
+                } else if (project.title.toLowerCase().includes("game")) {
+                  currentIcon = "🎮";
+                  badgeColor = "text-success";
+                }
+
+                return (
+                  <div className="col-12 col-md-4" key={project.id}>
+                    <div className="card h-100 bg-white border rounded-4 shadow-sm overflow-hidden border-0">
+                      <div className="p-4 bg-light border-bottom text-center d-flex align-items-center justify-content-center" style={{ height: '160px' }}>
+                        <span className="display-4 opacity-75">{currentIcon}</span>
                       </div>
-
-                      <a href={project.githubLink} target="_blank" rel="noreferrer" className="text-navy fw-semibold text-decoration-none small">
-                        Explore Project →
-                      </a>
+                      <div className="card-body p-4 d-flex flex-column">
+                        <h5 className="card-title fw-bold text-dark mb-2">{project.title}</h5>
+                        <p className="card-text text-secondary small flex-grow-1" style={{ lineHeight: '1.6' }}>
+                          {project.description}
+                        </p>
+                        <div className="mb-3 mt-2">
+                          {(project.technologies ? project.technologies.split(',') : []).map((tech, index) => (
+                            <span className={`badge bg-light ${badgeColor} border me-1 mb-1`} key={index}>
+                              {tech.trim()}
+                            </span>
+                          ))}
+                        </div>
+                        <a href={project.githubLink} target="_blank" rel="noreferrer" className="text-navy fw-semibold text-decoration-none small">
+                          Explore Project →
+                        </a>
+                      </div>
                     </div>
                   </div>
-                </div>
-              );
-            })}
+                );
+              });
+            })()}
           </div>
         </section>
 

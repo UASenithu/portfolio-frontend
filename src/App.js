@@ -313,6 +313,42 @@ function App() {
           </div>
         </section>
 
+
+              {/* 🎓 CAMPUS ASSIGNMENTS SECTION */}
+        <section id="campus-assignments" className="container py-5 border-top">
+          <div className="text-center mb-5">
+            <h2 className="fw-bold text-dark">Academic Portfolio</h2>
+            <p className="text-secondary small">University assignments and professional skills development</p>
+          </div>
+
+          <div className="row justify-content-center">
+            <div className="col-12 col-md-6">
+              <div className="card border-0 shadow-sm rounded-4 overflow-hidden">
+                <div className="row g-0">
+                  <div className="col-4 bg-indigo-900 d-flex align-items-center justify-content-center">
+                    <span className="display-3">🎓</span>
+                  </div>
+                  <div className="col-8">
+                    <div className="card-body p-4">
+                      <h5 className="card-title fw-bold">Professional Skills (PPA)</h5>
+                      <p className="card-text text-secondary small">
+                        Career insights, CV writing, interview skills, and Grow Green capstone project details.
+                      </p>
+                      {/* මෙතන තමයි ඔයාගේ අර Professional Portfolio එකට යන button එක */}
+                      <Link 
+                        to="/professional-portfolio" 
+                        className="btn btn-primary btn-sm rounded-pill px-4"
+                      >
+                        View Portfolio →
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
       {/* 📞 CONTACT SECTION */}
       <section id="contact" className="container py-5 border-top">
         <div className="row g-5">

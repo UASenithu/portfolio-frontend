@@ -229,7 +229,7 @@ function ProfessionalPortfolio() {
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-4">
                 <div className="border border-green-200 bg-white rounded-xl p-2 text-center">
-                  <img src="https://via.placeholder.com/450x280?text=Grow+Green+Team+Group+Photo" alt="Group" className="rounded-lg mx-auto" />
+                  <img src="11.2.jpeg" alt="Group" className="rounded-lg mx-auto" />
                   <span className="text-[11px] font-semibold text-green-700 block mt-2">Team Assembly: 41 Group Members in Hall No: 403</span>
                 </div>
                 <div className="border border-green-200 bg-white rounded-xl p-2 text-center">

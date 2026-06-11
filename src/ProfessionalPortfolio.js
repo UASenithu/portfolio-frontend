@@ -91,11 +91,11 @@ function ProfessionalPortfolio() {
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-4">
                 <div className="border border-slate-200 bg-slate-50 rounded-xl p-2 text-center">
-                  <img src="https://ied.eu/project-updates/how-the-improvement-of-long-term/" alt="Chart" className="rounded-lg mx-auto max-w-full" />
+                  <img src="1.png" alt="Chart" className="rounded-lg mx-auto max-w-full" />
                   <span className="text-[11px] text-slate-400 block mt-2">Diagram: Core Employability Attributes</span>
                 </div>
                 <div className="border border-slate-200 bg-slate-50 rounded-xl p-2 text-center">
-                  <img src="https://via.placeholder.com/400x250?text=Johari+Window+Matrix" alt="Johari" className="rounded-lg mx-auto max-w-full" />
+                  <img src="1.2.webp" alt="Johari" className="rounded-lg mx-auto max-w-full" />
                   <span className="text-[11px] text-slate-400 block mt-2">Diagram: Johari Window Matrix</span>
                 </div>
               </div>
@@ -217,6 +217,8 @@ function ProfessionalPortfolio() {
             </div>
           </section>
 
+
+
           {/* CAPSTONE PROJECT: GROW GREEN */}
           <section id="growgreen" className="bg-gradient-to-br from-emerald-50 to-green-50 rounded-2xl shadow-sm border border-green-100 p-8 scroll-mt-6">
             <div className="flex items-center gap-3 border-b border-green-200 pb-5 mb-6">
@@ -238,11 +240,11 @@ function ProfessionalPortfolio() {
                 </div>
                 <div className="border border-green-200 bg-white rounded-xl p-2 text-center">
                   <img src="11.1.jpeg" alt="Props" className="rounded-lg mx-auto" />
-                  <span className="text-[11px] font-semibold text-green-700 block mt-2">Campaign Materials: Bookmarks, Props & Banners Used</span>
+                  <span className="text-[11px] font-semibold text-green-700 block mt-2">lectures</span>
                 </div>
                 <div className="border border-green-200 bg-white rounded-xl p-2 text-center">
                   <img src="11.6.jpeg" alt="Props" className="rounded-lg mx-auto" />
-                  <span className="text-[11px] font-semibold text-green-700 block mt-2">Campaign Materials: Bookmarks, Props & Banners Used</span>
+                  <span className="text-[11px] font-semibold text-green-700 block mt-2">Plants</span>
                 </div>
               </div>
 

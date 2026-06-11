@@ -80,7 +80,7 @@ function App() {
        border: '4px solid #fff' // මේකෙන් ෆොටෝ එක වටේ සුදු පාට පෝඩර් එකක් ඇවිත් තව ලස්සන වෙනවා
      }}>
 <img 
-  src="/my-photo.jpg" 
+  src="/newphoto.png" 
   alt="My Profile" 
   style={{ 
     width: '100%', 

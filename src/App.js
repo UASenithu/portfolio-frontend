@@ -13,12 +13,6 @@ function App() {
 
   // useEffect එක සම්පූර්ණයෙන්ම අයින් කරා!
 
-  return (
-    <div className="pb-5">
-      {/* ... */}
-    </div>
-  );
-}
 
     <div className="pb-5">
       
@@ -318,6 +312,6 @@ function App() {
       {/* ... */}
     </div>
   );
-
+}
 
 export default App;

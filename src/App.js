@@ -3,8 +3,9 @@ import React, { useState, useEffect } from 'react';
 
 function App() {
  
-  const [projects, setProjects] = useState([]);
-  const [loading, setLoading] = useState(true);
+const [projects] = useState([
+  // ඔයාගේ projects array එක මෙතන දාන්න
+]);
 
 
  

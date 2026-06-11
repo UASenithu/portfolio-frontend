@@ -41,6 +41,12 @@ function App() {
             <button className="btn bg-navy text-white btn-sm px-3 py-2 rounded-3 fw-semibold ms-3">
                   Download CV
                 </button>
+            <a 
+              href="/Senithu.pdf" 
+              download="Senithu_Nethviru_CV.pdf" 
+              className="btn bg-navy text-white btn-sm px-3 py-2 rounded-3 fw-semibold ms-3 text-decoration-none">
+              Download CV
+            </a>
           </div>
         </div>
       </nav>

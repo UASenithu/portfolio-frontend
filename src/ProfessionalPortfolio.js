@@ -326,7 +326,7 @@ function ProfessionalPortfolio() {
       {/* FOOTER */}
       <footer className="bg-slate-950 text-slate-500 text-center py-8 text-xs border-t border-slate-900 mt-20">
         <p className="text-slate-400">&copy; 2026 U A S Nethviru. All Rights Reserved.</p>
-        <p className="font-light mt-1">Professional Skills (PPA Module) Portfolio Development Document.</p>
+        <p className="font-light mt-1">Professional Skills (PS Module) Portfolio Development Document.</p>
       </footer>
     </div>
   );

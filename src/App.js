@@ -255,6 +255,14 @@ function App() {
                   technologies: "React, JS",
                   githubLink: "#",
                   icon: "🧮"
+                },
+                {
+                  id: 5,
+                  title: "PortFolio Admin App",
+                  description: "A functional mini-app for managing my portfolio content.",
+                  technologies: "React, JS",
+                  githubLink: "#",
+                  icon: "🧮"
                 }
 
               ];

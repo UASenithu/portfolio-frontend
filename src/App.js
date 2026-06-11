@@ -225,66 +225,53 @@ function App() {
       </section>
 
       {/* 💼 DYNAMIC PROJECTS SECTION */}
-      <section id="projects" className="container py-5 border-top">
-        <div className="text-center mb-5">
-          <h2 className="fw-bold text-dark">Featured Projects</h2>
-          <p className="text-secondary small">A showcase of my recent system developments and academic projects</p>
-        </div>
+          <section id="projects" className="container py-5 border-top">
+            <div className="text-center mb-5">
+              <h2 className="fw-bold text-dark">Featured Projects</h2>
+              <p className="text-secondary small">A showcase of my recent system developments and academic projects</p>
+            </div>
 
-        {/* ⏳ Loader එකක් පෙන්වනවා ඩේටා ටික backend එකෙන් එනකම් */}
-        {loading ? (
-          <div className="text-center py-5 text-secondary">
-            <div className="spinner-border text-primary mb-2" role="status"></div>
-            <div>Projects load වෙනවා මචං... පොඩ්ඩක් ඉන්න...</div>
-          </div>
-        ) : (
-          <div className="row g-4">
-            {/* 🔄 Database එකෙන් එන ඩේටා ටික එකින් එක කාඩ්ස් වලට දානවා */}
-            {projects.map((project) => {
-              // 📦 ප්‍රොජෙක්ට් එකේ නම අනුව Emoji එක සහ Link එක dynamic මාරු කරනවා මචං
-              let currentIcon = "📦";
-              let currentUrl = project.githubLink || "#projects";
-              let badgeColor = "text-navy";
+            <div className="row g-4">
+              {projects.map((project) => {
+                let currentIcon = "📦";
+                let badgeColor = "text-navy";
 
-              if (project.title.toLowerCase().includes("parts") || project.title.toLowerCase().includes("shop")) {
-                currentIcon = "⚙️";
-                badgeColor = "text-primary";
-              } else if (project.title.toLowerCase().includes("calculator") || project.title.toLowerCase().includes("app")) {
-                currentIcon = "📱";
-                badgeColor = "text-secondary";
-              }
+                if (project.title.toLowerCase().includes("management")) {
+                  currentIcon = "⚙️";
+                  badgeColor = "text-primary";
+                } else if (project.title.toLowerCase().includes("flood")) {
+                  currentIcon = "🌊";
+                  badgeColor = "text-secondary";
+                }
 
-              return (
-                <div className="col-12 col-md-4" key={project.id}>
-                  <div className="card h-100 bg-white border rounded-4 shadow-sm overflow-hidden border-0">
-                    <div className="p-4 bg-light border-bottom text-center d-flex align-items-center justify-content-center" style={{ height: '160px' }}>
-                      {/* 🔥 මෙතනට dynamic අයිකන් එක සෙට් කරා */}
-                      <span className="display-4 opacity-75">{currentIcon}</span>
-                    </div>
-                    <div className="card-body p-4 d-flex flex-column">
-                      <h5 className="card-title fw-bold text-dark mb-2">{project.title}</h5>
-                      <p className="card-text text-secondary small flex-grow-1" style={{ lineHeight: '1.6' }}>
-                        {project.description}
-                      </p>
-                      <div className="mb-3 mt-2">
-                        {project.technologies.split(',').map((tech, index) => (
-                          <span className={`badge bg-light ${badgeColor} border me-1 mb-1`} key={index}>
-                            {tech.trim()}
-                          </span>
-                        ))}
+                return (
+                  <div className="col-12 col-md-4" key={project.id}>
+                    <div className="card h-100 bg-white border rounded-4 shadow-sm overflow-hidden border-0">
+                      <div className="p-4 bg-light border-bottom text-center d-flex align-items-center justify-content-center" style={{ height: '160px' }}>
+                        <span className="display-4 opacity-75">{currentIcon}</span>
                       </div>
-                      {/* 🔥 මෙතනට dynamic GitHub ලින්ක් එක සෙට් කරා */}
-                      <a href={currentUrl} target="_blank" rel="noreferrer" className="text-navy fw-semibold text-decoration-none small">
-                        {project.title.toLowerCase().includes("calculator") ? "View Source Code →" : "Explore Project →"}
-                      </a>
+                      <div className="card-body p-4 d-flex flex-column">
+                        <h5 className="card-title fw-bold text-dark mb-2">{project.title}</h5>
+                        <p className="card-text text-secondary small flex-grow-1" style={{ lineHeight: '1.6' }}>
+                          {project.description}
+                        </p>
+                        <div className="mb-3 mt-2">
+                          {project.technologies.split(',').map((tech, index) => (
+                            <span className={`badge bg-light ${badgeColor} border me-1 mb-1`} key={index}>
+                              {tech.trim()}
+                            </span>
+                          ))}
+                        </div>
+                        <a href={project.githubLink} target="_blank" rel="noreferrer" className="text-navy fw-semibold text-decoration-none small">
+                          Explore Project →
+                        </a>
+                      </div>
                     </div>
                   </div>
-                </div>
-              );
-            })}
-          </div>
-        )}
-      </section>
+                );
+              })}
+            </div>
+          </section>
 
       {/* 📞 CONTACT SECTION */}
       <section id="contact" className="container py-5 border-top">

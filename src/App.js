@@ -126,6 +126,29 @@ function App() {
                 <span className="text-dark font-medium">Software Engineering & Network Security</span>
               </div>
               <div>
+                <div className="p-4 bg-white border rounded-4 shadow-sm">
+                    <h5 className="fw-bold mb-4 text-navy">Education & Certifications</h5>
+                    
+                    <div className="mb-3">
+                      <span className="badge bg-light text-navy border me-2">Degree</span>
+                      <span className="text-dark font-medium">BSc (Hons) in Computer Science - SLIIT City Uni (2023 - Present)</span>
+                    </div>
+                    
+                    <div className="mb-3">
+                      <span className="badge bg-light text-navy border me-2">Diploma</span>
+                      <span className="text-dark font-medium">Higher Diploma in HRM - SLTC</span>
+                    </div>
+                    
+                    <div className="mb-3">
+                      <span className="badge bg-light text-navy border me-2">Professional</span>
+                      <span className="text-dark font-medium">CCNA - WINSYS Institute | Java Programming - IIT</span>
+                    </div>
+
+                    <div className="mb-3">
+                      <span className="badge bg-light text-navy border me-2">Schooling</span>
+                      <span className="text-dark font-medium">GCE A/L & O/L Qualified</span>
+                    </div>
+                  </div>
                 <span className="badge bg-light text-navy border me-2">Availability</span>
                 <span className="text-success font-semibold">Internships / Freelance Projects</span>
               </div>

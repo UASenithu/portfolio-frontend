@@ -139,9 +139,11 @@ function App() {
                       <span className="badge bg-light text-navy border me-2">Schooling</span>
                       <span className="text-dark font-medium">GCE A/L & O/L Qualified</span>
                     </div>
+                    <div className="mb-3">
+                     <span className="badge bg-light text-navy border me-2">Availability</span>
+                     <span className="text-success font-semibold">Internships / Freelance Projects</span>
+                    </div>
                   </div>
-                <span className="badge bg-light text-navy border me-2">Availability</span>
-                <span className="text-success font-semibold">Internships / Freelance Projects</span>
               </div>
             </div>
       </section>

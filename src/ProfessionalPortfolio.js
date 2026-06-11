@@ -208,7 +208,7 @@ function ProfessionalPortfolio() {
               Through structured consensus, our group prioritized critical items like Oxygen tanks, Lunar GPS, and Communication signal boosters to practice collaborative decision-making under intense simulated pressure.
             </div>
           </section>
-          
+
 
           {/* 07. DINING ETIQUETTES */}
           <section id="dining" className="bg-white rounded-2xl shadow-sm border border-slate-200/60 p-8 scroll-mt-6">
@@ -217,10 +217,15 @@ function ProfessionalPortfolio() {
               <h2 className="text-xl font-bold text-slate-900">Dining Etiquettes</h2>
             </div>
             <p className="text-slate-600 text-sm text-justify leading-relaxed mb-4">Business is often conducted over meals. This session focused on the nuances of dining etiquette and table manners, underscoring their importance in personal networking, academic functions, and high-stakes professional environments.</p>
+                <div className="border border-slate-200 bg-slate-50 rounded-xl p-2 text-center">
+                  <img src="7.jpg" alt="Johari" className="rounded-lg mx-auto max-w-full" /> 
+                </div>
             <div className="border-l-4 border-indigo-500 bg-indigo-50 p-3 text-xs text-indigo-950 rounded-r-lg">
               <strong>The BMW Rule:</strong> <strong>B</strong>read on the left-hand side, <strong>M</strong>eal centered appropriately, and <strong>W</strong>ater allocated toward the right side.
             </div>
           </section>
+
+          
 
           {/* 08. GROOMING ETIQUETTES */}
           <section id="grooming" className="bg-white rounded-2xl shadow-sm border border-slate-200/60 p-8 scroll-mt-6">
@@ -229,6 +234,9 @@ function ProfessionalPortfolio() {
               <h2 className="text-xl font-bold text-slate-900">Grooming Etiquettes</h2>
             </div>
             <p className="text-slate-600 text-sm text-justify leading-relaxed">This module highlighted the profound impact that personal grooming and visual etiquette have within professional spaces. Professional grooming is not about luxury brands; rather, it is about maintaining a neat appearance, clean corporate attire, and solid posture as a tangible sign of self-respect to build a powerful Personal Brand.</p>
+                <div className="border border-slate-200 bg-slate-50 rounded-xl p-2 text-center">
+                  <img src="8.webp" alt="Johari" className="rounded-lg mx-auto max-w-full" /> 
+                </div>
           </section>
 
           {/* 09. NEGOTIATION SKILLS */}
@@ -238,6 +246,14 @@ function ProfessionalPortfolio() {
               <h2 className="text-xl font-bold text-slate-900">Negotiation Skills</h2>
             </div>
             <p className="text-slate-600 text-sm text-justify leading-relaxed mb-4">Negotiation is an inescapable part of life and software development. This session broke down negotiation mechanics, framing it as collaborative problem-solving aimed at reaching mutually beneficial agreements while preserving long-term professional connections.</p>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-4">
+                <div className="border border-slate-200 bg-slate-50 rounded-xl p-2 text-center">
+                  <img src="9.jpg" alt="Chart" className="rounded-lg mx-auto max-w-full" />
+                </div>
+                <div className="border border-slate-200 bg-slate-50 rounded-xl p-2 text-center">
+                  <img src="9.1.jpg" alt="Johari" className="rounded-lg mx-auto max-w-full" /> 
+                </div>
+              </div>
             <div className="p-3 bg-amber-50 rounded-lg text-xs border border-amber-100 text-amber-950">
               <strong>BATNA:</strong> Best Alternative to a Negotiated Agreement—your essential fallback strategy if negotiation stalls completely.
             </div>
@@ -250,6 +266,9 @@ function ProfessionalPortfolio() {
               <h2 className="text-xl font-bold text-slate-900">Codes of Ethics in IT</h2>
             </div>
             <p className="text-slate-600 text-sm text-justify leading-relaxed mb-4">The final core session transitioned into the realm of morality, focusing on professional responsibilities and the strict codes of ethics governing Information Technology. As future IT professionals, the systems we build will heavily impact society, requiring strict accountability.</p>
+                <div className="border border-slate-200 bg-slate-50 rounded-xl p-2 text-center">
+                  <img src="10.jpg" alt="Johari" className="rounded-lg mx-auto max-w-full" /> 
+                </div>
             <div className="p-3 bg-slate-50 text-slate-500 font-bold text-center tracking-wider text-[10px] rounded-xl">
               GOVERNED BY: CSSL | ACM | IEEE COMPUTER SOCIETY | BCS
             </div>

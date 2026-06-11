@@ -135,7 +135,7 @@ function ProfessionalPortfolio() {
             <p className="text-slate-600 text-sm text-justify leading-relaxed">This session was entirely dedicated to the art and science of Portfolio Writing. The lecturer explained how a well-structured portfolio serves as a powerful catalyst for personal development and professional advancement. We explored how portfolios are utilized to visually and factually document achievements, skills, hands-on experience, and concrete evidence of continuous learning.</p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-4">
                 <div className="border border-slate-200 bg-slate-50 rounded-xl p-2 text-center">
-                  <img src="1.png" alt="Chart" className="rounded-lg mx-auto max-w-full" />
+                  <img src="3.1.png" alt="Chart" className="rounded-lg mx-auto max-w-full" />
                   <span className="text-[11px] text-slate-400 block mt-2">Diagram: Core Employability Attributes</span>
                 </div>
                 <div className="border border-slate-200 bg-slate-50 rounded-xl p-2 text-center">
@@ -157,8 +157,12 @@ function ProfessionalPortfolio() {
               <h2 className="text-xl font-bold text-slate-900">CV Writing</h2>
             </div>
             <p className="text-slate-600 text-sm text-justify leading-relaxed mb-4">Crafting a professional Curriculum Vitae (CV) was the core focus of this highly practical session. We received step-by-step guidance on structuring, properly formatting, and strategically tailoring a CV to perfectly highlight our qualifications, unique skills, and past experiences.</p>
+                <div className="border border-slate-200 bg-slate-50 rounded-xl p-2 text-center">
+                  <img src="4.1.jpg" alt="Johari" className="rounded-lg mx-auto max-w-full" />
+                  <span className="text-[11px] text-slate-400 block mt-2">Diagram: Johari Window Matrix</span>
+                </div>
             <div className="bg-amber-50 rounded-xl p-4 border border-amber-200 text-xs text-amber-900">
-              <strong>Key Takeaway:</strong> Tailor your CV explicitly to match the requirements outlined in specific job descriptions rather than using generic templates.
+              <strong>Key Takeaway:</strong> Tailor MY CV explicitly to match the requirements outlined in specific job descriptions rather than using generic templates.
             </div>
           </section>
 
@@ -169,10 +173,20 @@ function ProfessionalPortfolio() {
               <h2 className="text-xl font-bold text-slate-900">Interview Skills</h2>
             </div>
             <p className="text-slate-600 text-sm text-justify leading-relaxed mb-4">Securing an interview is only half the battle; performing well during it is what secures the job. This session focused on mastering effective interview techniques and deeply understanding the vital roles that both verbal and non-verbal communication play during the process.</p>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-4">
+                <div className="border border-slate-200 bg-slate-50 rounded-xl p-2 text-center">
+                  <img src="5.jpeg" alt="Chart" className="rounded-lg mx-auto max-w-full" />
+                </div>
+                <div className="border border-slate-200 bg-slate-50 rounded-xl p-2 text-center">
+                  <img src="5.1.png" alt="Johari" className="rounded-lg mx-auto max-w-full" /> 
+                </div>
+              </div>
             <div className="bg-slate-50 p-4 rounded-xl text-xs text-slate-600 border border-slate-100">
-              <strong>The STAR Framework:</strong> Situation (Context), Task (Assignment), Action (Your steps), Result (Quantifiable outcome).
+              <strong>The STAR Framework:</strong> Situation (Context), Task (Assignment), Action , Result (Quantifiable outcome).
             </div>
           </section>
+
+          
 
           {/* 06. TELEPHONE ETIQUETTE */}
           <section id="telephone" className="bg-white rounded-2xl shadow-sm border border-slate-200/60 p-8 scroll-mt-6">
@@ -181,11 +195,20 @@ function ProfessionalPortfolio() {
               <h2 className="text-xl font-bold text-slate-900">Telephone & Communication Etiquettes</h2>
             </div>
             <p className="text-slate-600 text-sm text-justify leading-relaxed mb-4">In an era dominated by digital communication, this session focused heavily on telephone and online etiquette within academic and professional spheres. We explored how displaying proper manners across emails, phone calls, and social media platforms reflects our overall professionalism.</p>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-4">
+                <div className="border border-slate-200 bg-slate-50 rounded-xl p-2 text-center">
+                  <img src="6.jpg" alt="Chart" className="rounded-lg mx-auto max-w-full" />
+                </div>
+                <div className="border border-slate-200 bg-slate-50 rounded-xl p-2 text-center">
+                  <img src="6.1.png" alt="Johari" className="rounded-lg mx-auto max-w-full" /> 
+                </div>
+              </div>
             <div className="bg-slate-900 text-slate-200 p-4 rounded-xl text-xs">
               <span className="text-indigo-400 font-bold block mb-1">Group Interaction Challenge: "Crash on the Moon"</span>
               Through structured consensus, our group prioritized critical items like Oxygen tanks, Lunar GPS, and Communication signal boosters to practice collaborative decision-making under intense simulated pressure.
             </div>
           </section>
+          
 
           {/* 07. DINING ETIQUETTES */}
           <section id="dining" className="bg-white rounded-2xl shadow-sm border border-slate-200/60 p-8 scroll-mt-6">

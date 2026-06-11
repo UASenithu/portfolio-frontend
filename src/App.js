@@ -1,29 +1,24 @@
-import React, { useState, useEffect } from 'react'; 
-
+import React, { useState } from 'react'; 
 
 function App() {
- 
-const [projects] = useState([
-  // ඔයාගේ projects array එක මෙතන දාන්න
-]);
+  // මෙතන loading කියන එක නෑ, projects විතරයි
+  const [projects] = useState([
+    {
+      id: 1,
+      title: "Inventory Management System",
+      // ... අනිත් විස්තර
+    },
+    // ...
+  ]);
 
-
- 
-  useEffect(() => {
-    fetch('http://localhost:8081/api/projects')
-      .then(response => response.json())
-      .then(data => {
-        setProjects(data); // ඩේටාබේස් එකෙන් ආපු projects 3ම state එකට දානවා
-        setLoading(false);
-      })
-      .catch(error => {
-        console.error("Error fetching projects:", error);
-        setLoading(false);
-      });
-  }, []);
+  // useEffect එක සම්පූර්ණයෙන්ම අයින් කරා!
 
   return (
-    
+    <div className="pb-5">
+      {/* ... */}
+    </div>
+  );
+}
 
     <div className="pb-5">
       

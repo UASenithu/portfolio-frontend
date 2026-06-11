@@ -233,7 +233,15 @@ function ProfessionalPortfolio() {
                   <span className="text-[11px] font-semibold text-green-700 block mt-2">Team Assembly: 41 Group Members in Hall No: 403</span>
                 </div>
                 <div className="border border-green-200 bg-white rounded-xl p-2 text-center">
-                  <img src="https://via.placeholder.com/450x280?text=Project+Props+And+Materials" alt="Props" className="rounded-lg mx-auto" />
+                  <img src="11.4.jpeg" alt="Props" className="rounded-lg mx-auto" />
+                  <span className="text-[11px] font-semibold text-green-700 block mt-2">Campaign Materials: Bookmarks, Props & Banners Used</span>
+                </div>
+                <div className="border border-green-200 bg-white rounded-xl p-2 text-center">
+                  <img src="11.1.jpeg" alt="Props" className="rounded-lg mx-auto" />
+                  <span className="text-[11px] font-semibold text-green-700 block mt-2">Campaign Materials: Bookmarks, Props & Banners Used</span>
+                </div>
+                <div className="border border-green-200 bg-white rounded-xl p-2 text-center">
+                  <img src="11.6.jpeg" alt="Props" className="rounded-lg mx-auto" />
                   <span className="text-[11px] font-semibold text-green-700 block mt-2">Campaign Materials: Bookmarks, Props & Banners Used</span>
                 </div>
               </div>

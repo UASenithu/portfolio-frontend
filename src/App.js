@@ -2,14 +2,7 @@ import React, { useState } from 'react';
 
 function App() {
   // මෙතන loading කියන එක නෑ, projects විතරයි
-  const [projects] = useState([
-    {
-      id: 1,
-      title: "Inventory Management System",
-      // ... අනිත් විස්තර
-    },
-    // ...
-  ]);
+
 
   // useEffect එක සම්පූර්ණයෙන්ම අයින් කරා!
   return (

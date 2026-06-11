@@ -91,7 +91,7 @@ function ProfessionalPortfolio() {
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-4">
                 <div className="border border-slate-200 bg-slate-50 rounded-xl p-2 text-center">
-                  <img src="https://via.placeholder.com/400x250?text=Core+Employability+Attributes" alt="Chart" className="rounded-lg mx-auto max-w-full" />
+                  <img src="https://ied.eu/project-updates/how-the-improvement-of-long-term/" alt="Chart" className="rounded-lg mx-auto max-w-full" />
                   <span className="text-[11px] text-slate-400 block mt-2">Diagram: Core Employability Attributes</span>
                 </div>
                 <div className="border border-slate-200 bg-slate-50 rounded-xl p-2 text-center">

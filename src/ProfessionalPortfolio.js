@@ -133,6 +133,11 @@ function ProfessionalPortfolio() {
               <h2 className="text-xl font-bold text-slate-900">Portfolio Writing</h2>
             </div>
             <p className="text-slate-600 text-sm text-justify leading-relaxed">This session was entirely dedicated to the art and science of Portfolio Writing. The lecturer explained how a well-structured portfolio serves as a powerful catalyst for personal development and professional advancement. We explored how portfolios are utilized to visually and factually document achievements, skills, hands-on experience, and concrete evidence of continuous learning.</p>
+            <div className="border border-slate-200 bg-slate-50 rounded-xl p-2 text-center">
+                <img src="1.2.webp" alt="Johari" className="rounded-lg mx-auto max-w-full" />
+                <span className="text-[11px] text-slate-400 block mt-2">Diagram: Johari Window Matrix</span>
+            </div>
+
           </section>
 
 
